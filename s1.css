@@ -2,8 +2,8 @@
 body{
 	background: linear-gradient(-45deg,#851685, #db5427, #df2a99, #1fa4d4, #23d5ab);
 	background-size: 400% 400%;
-	-webkit-animation: gradientBG 20s ease infinite;
-			 animation: gradientBG 20s ease infinite;
+	-webkit-animation: gradientBG 15s ease infinite;
+			 animation: gradientBG 15s ease infinite;
 	border: none;
  }
  @-webkit-keyframes gradientBG{
@@ -117,6 +117,7 @@ nav ul li a{
 }
 .hire-btn{
 	border:2px solid #f8f2f2;
+	
 	color:#111010;
 }
 .down-cv{
