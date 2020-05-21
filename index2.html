@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@ccharset "utf-8";
+body{
+	background: linear-gradient(-45deg,#851685, #150e77, #e03da2, #1fa4d4, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradientBG 15s ease infinite;
+			 animation: gradientBG 15s ease infinite;
+	border: none;
+ }
+ @-webkit-keyframes gradientBG{
+	0%{
+	   background-position: 0% 50%;
+	}
+	50%{
+	   background-position: 100% 50%;
+	}
+	100%{
+	   background-position: 0% 50%;
+	}
+ }
+ @keyframes gradientBG{
+	0%{
+	   background-position: 0% 50%;
+	}
+	50%{
+	   background-position: 100% 50%;
+	}
+	100%{
+	   background-position: 0% 50%;
+	}
+ }
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(151, 124, 214);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:;
+  opacity:70%;
+  font-size:large;
+  color:rgba(7, 7, 7, 0.925);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:#237dd1 ;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: ;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="mail-ID">Email-ID</label>
+    <input type="text" id="mail-ID" name="mail-ID" placeholder="Your email-id..">
+
+    
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
