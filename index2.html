@@ -11,6 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Contact Anitha!</title>
+  <link rel="stylesheet" type="text/css" href="modal.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 @ccharset "utf-8";
@@ -81,11 +82,25 @@ input[type=submit]:hover {
 </head>
 <body>
 
-  <nav>
-    <a href="#" class="logo">Anitha Rathnam KV</a>
-    <ul>
-      <li><a href="index.html" class="active" style="color: #e0e0e0;">Home</a></li>
-      <li><a href="index2.html" style="color: white;">Contact me</a></li>
+  <nav style="display:flex;
+  justify-content: space-between;
+  align-items:center;
+  height:60px;
+  background-color: transparent;
+  /* border-bottom: 5px solid #FFFFFF;
+  box-shadow:0px 0px 2px rgba(0,0,0,0.2); */
+  padding:0px 5%;">
+    <a href="index.html" class="logo" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#FFFFFF;
+    font-size:22px;  list-style:none;  text-decoration:none;"><i class="fa fa-chevron-left" style="font-size: 21px; color: white;margin-right: 10px;"></i>Go back</a>
+    <ul style="display: flex;  list-style:none;">
+      <li><a href="index.html" class="active" style="margin:30px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color:#e0e0e0;
+        font-size:22px;
+        font-weight:700;
+        text-decoration:none;">
+        Anitha Rathnam KV</a></li>
 </ul>
 <!--<div class="toggle"></div>-->
 
@@ -93,9 +108,9 @@ input[type=submit]:hover {
 
 
 
-<div class="container">
+<div class="container" style="padding-left: 15%; padding-right: 15%;">
   <h3 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: white; font-weight: bold; font-size: 30px;">Contact Me!</h3>
-  <form action="/action_page.php">
+  <form >
     <label for="fname" style="color: white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: bold;">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -103,16 +118,59 @@ input[type=submit]:hover {
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
     <label for="mail-ID" style="color: white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bold;">Email-ID</label>
-    <input type="text" id="mail-ID" name="mail-ID" placeholder="Your email-id..">
+    <input type="text" id="mailID" name="mail-ID" placeholder="Your email-id..">
 
     
 
     <label for="subject" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: white; font-weight: bold;">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <textarea type="text" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-  <input type="submit" value="Submit">
-  </form>
+  
+
+</form>
+<button id="submit"  style="height: 50px; width: 250px; border: 1px solid transparent; border-radius: 7px; background-color: #150e77; color: white; font-weight: bold;">SUBMIT</button>
 </div>
+<script>
+  function myFunction() {
+    document.getElementById("lalala").onclick = function () {
+        location.href = "index.html";
+    }
+  }
+  </script>
+  <div id="myModal" class="modal">
 
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Successfully Submitted!</p>
+      <button id="lalala"  onclick="myFunction()"  style="height: 50px; width: 250px; border: 1px solid transparent; border-radius: 7px; background-color: #150e77; color: white; font-weight: bold;">GO HOME</button>
+    </div>
+  
+  </div>
+  <script>// Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("submit");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }</script>
 </body>
 </html>

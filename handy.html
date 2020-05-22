@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<title>Handy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://kit.fontawesome.com/acaaafa582.js" crossorigin="anonymous"></script>
+<style>
+.mySlides {display:none;}
+</style>
+<style>
+  @ccharset "utf-8";
+  body{
+    background: linear-gradient(-45deg,#851685, #150e77, #e03da2, #1fa4d4, #23d5ab);
+    background-size: 200% 200%;
+    
+    border: none;
+   }
+
+   
+  body {font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+  * {box-sizing: border-box;}
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(151, 124, 214);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color:;
+    opacity:70%;
+    font-size:large;
+    color:rgba(7, 7, 7, 0.925);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:#237dd1 ;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: ;
+    padding: 20px;
+  }
+  </style>
+<body>
+ 
+  <nav style="display:flex;
+  justify-content: space-between;
+  align-items:center;
+  height:60px;
+  background-color: transparent;
+  /* border-bottom: 5px solid #FFFFFF;
+  box-shadow:0px 0px 2px rgba(0,0,0,0.2); */
+  padding:0px 5%;">
+    <a href="index.html" class="logo" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#FFFFFF;
+    font-size:22px;  list-style:none;  text-decoration:none;"><i class="fa fa-chevron-left" style="font-size: 21px; color: white;margin-right: 10px;"></i>Go back</a>
+    <ul style="display: flex;  list-style:none;">
+      <li><a href="index.html" class="active" style="margin:30px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color:#e0e0e0;
+        font-size:22px;
+        font-weight:700;
+        text-decoration:none;">
+        Anitha Rathnam KV</a></li>
+</ul>
+<!--<div class="toggle"></div>-->
+
+  </nav>
+  <h2 class="w3-center" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 19px; color: white; font-weight: bold;">Handy!</h2>
+<div class="w3-content w3-display-container" style="box-shadow: 2px 2px 12px black; margin-top: 50px;">
+  <img class="mySlides" src="/assets/images/background1.png" style="width:100%">
+  <img class="mySlides" src="/assets/images/background2.png" style="width:100%">
+  <img class="mySlides" src="/assets/images/background3.png" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>

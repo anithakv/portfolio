@@ -118,7 +118,7 @@ nav ul li a{
 .hire-btn{
 	border:2px solid #f8f2f2;
 	
-	color:#111010;
+	color:transparent;
 }
 .down-cv{
 	background-color:#0b0b0b;
@@ -208,7 +208,7 @@ button:active{
 .box-1,.box-2,.box-3{
 	width:300px;
 	height:320px;
-	background-color: white;
+	background-color:whitesmoke;
 	opacity: 100%;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -237,7 +237,7 @@ button:active{
 	width:40px;
 	height:40px;
 	border-radius:50%;
-	background-color:#FFFFFF;
+	background-color:rgb(126, 124, 124);
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -266,7 +266,7 @@ button:active{
 .box-3 button{
 	width:100px;
 	height:30px;
-	background-color:#FFFFFF;
+	background-color:rgb(148, 147, 147);
 	border:none;
 	outline:none;
 	border-radius:5px;
@@ -596,3 +596,52 @@ footer p:nth-child(2){
 		width:90%;
 	}
 }
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+.material-icons.md-light { color: white; }
+.material-icons.md-light.md-inactive { color: white; }
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+  
+	/* Position the tooltip text */
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+  
+	/* Fade in tooltip */
+	opacity: 0;
+	transition: opacity 0.3s;
+  }
+  
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+  }

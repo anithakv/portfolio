@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Anitha Rathnam KV</title>
-    <link rel="stylesheet" type="text/css" href="s1.css"/>
+	<link rel="stylesheet" type="text/css" href="s1.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="https://kit.fontawesome.com/acaaafa582.js" crossorigin="anonymous"></script>
 	<!--<script src="https://kit.fontawesome.com/c8e4d183c" crossorigin="anonymous"></script>-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
   </head>
   <body>
     <section>
-      <nav>
+      <nav id="top">
         <a href="#" class="logo">Anitha Rathnam KV</a>
         <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="index2.html">Contact me</a></li>
+          <li><a href="#top" class="active">Home</a></li>
+          <li><a href="#con">Contact me</a></li>
 		</ul>
 		<!--<div class="toggle"></div>-->
 
@@ -37,45 +39,46 @@
 		<div class="about-text">
 		<p>About me </p>
 		<p>Developer & Designer</p>
-		<p>Hello,My name is Anitha Rathnam KV. </p>
+		<p>Born in 1999, living in Bengaluru, I'm pursuing B.Tech in Computer Science. </p>
 		<p>I am a Developer and also a Designer.</p>
 		</div>
 	</div>
 	<div class="Services">
 	
 	<div class="services-text">
-	<p>Services required</p>
+	<p>Projects</p>
 	<p>If you want a software for bussiness ,contact me. I make as soon as posssible.</p>
 	</div>
 	
 	<div class="box-container" style="opacity: 100%;">
 	 <div class="box-1">
 		<span>1</span>
-		<p class="heading">Web Design</p>
-		<p class="details">------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-		<button>Read More</button>
+		<p class="heading">ICLog</p>
+		<p class="details">A CMS which can be used to store and track components in an institution.</p>
+		<div class="tooltip" ><a href="https://github.com/anithakv/ic_log"><i class="fa fa-github" style="font-size: 21px; color: black;"></i><span class="tooltiptext">GitHub</span></a></div>
 		</div>
 	 <div class="box-2">
 	 <span>2</span>
-		<p class="heading">Web Development</p>
-		<p class="details">------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-		<button>Read More</button></div>
-	 <div class="box-3">
+		<p class="heading">Handy</p>
+		<p class="details">A Hand Gesture Recognition tool using which we can execute any script or apps with the help of hand gestures. </p>
+		<div class="tooltip" ><a href="handy.html"><i class="fa fa-image" style="font-size: 21px; color: black;"></i><span class="tooltiptext">View Images</span></a></div>
+		</div>
+	 <div class="box-3 ">
 	 <span>3</span>
-		<p class="heading">Security</p>
-		<p class="details">------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-		<button>Read More</button></div>
+		<p class="heading">MiniP</p>
+		<p class="details">An "idea jotpad" for private uses.</p>
+		<div class="tooltip" ><a href="https://minip.netlify.app"><i class="fa fa-globe" style="font-size: 21px; color: black;"></i><span class="tooltiptext">View Site</span></a></div>
+	
 	</div>
 	</div>
 	
-	<div class="contact-me">
+	<div class="contact-me" id="con" style="margin-top: 20px;;">
 	<p>If you have any project in your mind.</p>
 	<button id="demo" onclick="myFunction()">Contact me</button>
 	<p id="demo"></p>
 	</div>
 	<footer>
-	<p>Going-to Internet</p>
-	<p>---------------------------------------------------------------------------------------------------------------</p>
+
 		<div class="social-icons">
 			
 			<a href="https://www.facebook.com/sweety.anithakv"><i class="fa fa-facebook"></i></a>
@@ -84,7 +87,7 @@
 			<a href="https://github.com/anithakv"><i class="fa fa-github"></i></a>
 			
 		</div>
-		<p class="copyright">Copyright by Going-to Internet</p>
+		
 	</footer>
 	
 	<div class="a-social-b">
